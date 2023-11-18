@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Cinzel:wght@500&family=Lugrasimo&family=Montez&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:aliceblue;">
+    
+    <div class="popup parent">
+        <!--left part(picture) -->
+        <div class="lefthalf">
+            <div class="innerleft">
+                <h1 style="font-family: 'Alice', serif;">Secure your privacy with a <strong style="color:;">Password</strong></h1>
+            </div>
+        </div>
+
+        <div calss="righthalf">
+            <image src="icon/signInIcon.png" width="40px" height="40px">
+            <h2 style="font-family: 'Lugrasimo', cursive;">Hello There</h2>
+            <P>Enter the Information you entered while registering</P>
+            <!--Main Form-->
+            <form style="line-height: 2;">
+                <lable for="name">Name</lable><br>
+                <input type="text" name="name" required placeholder="Eg Your Name" size="40"><br>
+                <lable for="email">Email</lable><br>
+                <input type="email" name="email" required placeholder="abcd@gmail.com" size="40"><br>
+                <lable for="password">Password</lable><br>
+                <input type="text" name="password" required size="40"><br>
+
+                <!--Remeber + Forgot -->
+                <div class="remeber_forgot">
+                    <input type="checkbox" id="Remember" value="Remember_me">
+                    <lable for="Remember">Rember me</lable>
+                    <a href="">Forgot Password</a>
+                </div>
+                
+                <!--Login Button-->
+                <input type="button" value="create" id="create" class="login" ><br>
+                <input class="login" type="submit" value="Login" size="40">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
